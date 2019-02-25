@@ -1,0 +1,69 @@
+body {
+  padding: 5rem;
+  background: #333;
+}
+
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+svg {
+  width: 7rem;
+}
+
+.path {
+  stroke-dasharray: 4550;
+  stroke-dashoffset: 4550;
+  -webkit-animation: dash 0.56s linear, fill 0.28s ease-in-out 0.56s;
+          animation: dash 0.56s linear, fill 0.28s ease-in-out 0.56s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: rotate(180deg) scaleX(-1) translate(-96px, -12px);
+          transform: rotate(180deg) scaleX(-1) translate(-96px, -12px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke: #00e25e;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 4500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 4500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fill {
+  0% {
+    fill: rgba(0, 226, 94, 0);
+  }
+  100% {
+    fill: #00e25e;
+  }
+}
+@keyframes fill {
+  0% {
+    fill: rgba(0, 226, 94, 0);
+  }
+  100% {
+    fill: #00e25e;
+  }
+}
+h1
+{
+  font-weight: 3em;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: #fff;
+}

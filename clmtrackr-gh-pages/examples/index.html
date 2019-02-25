@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>GLITCH</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="styles/style.css">
+    
+
+  
+</head>
+<style>
+.menu {
+  cursor: pointer;
+  padding: 15px;
+  max-height: 100%;
+  overflow: hidden;
+  background: #333;
+}
+
+.menu .line {
+  height: 4px;
+  display: block;
+  width: 40px;
+  background: #FFF;
+  box-shadow: 0 1px 6px #000;
+  margin: 10px;
+  opacity: 1;
+  transition: all 500ms ease;
+}
+
+.menu.active .line:nth-child(1) {
+  height: 1000px;
+  width: 250px;
+  margin: -20px;
+  box-shadow: 0 0 0 rgba(1, 1, 1, 0);
+}
+
+.menu.active .line:nth-child(2),
+.menu.active .line:nth-child(3) {
+  opacity: 0;
+}
+
+.nav {
+  padding: 20px;
+}
+
+.menu:not(.active) .nav li {
+  opacity: 0;
+  margin-bottom: -10px;
+}
+
+.menu .nav li {
+  opacity: 1;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: opacity 500ms ease, margin-bottom 500ms ease, padding-left 250ms ease;
+}
+
+.menu .nav li:hover {
+  padding-left: 5px;
+}
+h2 {margin-top: 0.5em;
+margin-bottom: 2em;}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+    </style>
+<body>
+  <div class="menu" onclick="javascript: this.classList.toggle('active');">
+  <i class="line">
+    <ul class="nav">
+      <li href="index.html">Home</li>
+      <li><a href="verify.html">Verify your OTP</a></li>
+      <li>Contact Us</li>
+    </ul>
+  </i><i class="line"></i><i class="line"></i>
+</div>
+
+  <div class="container">
+	<h1 class="glitch">GLITCH</h1>
+	<div class="wrapper">
+  		<a href="facial_coordinates.html" class="button" align="right">Get Started!</a>
+	</div>
+
+	<h2 class= "data">Generate smarter and safer OTP </h2>
+</div>
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Enter OTP</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="styles/verify_otp.css">
+
+  
+</head>
+<style >
+  h3,p{color: #fff}
+
+</style>
+<body>
+
+<div class="row pop-up">
+  <div class="box small-6 large-centered">3
+    <a href="#" class="close-button">&#10006;</a>
+    <h3>Welcome</h3>
+    <p>Your secure OTP is : ________</p>
+  </div>
+</div>
+
+  <main class="container">
+  <form action="http://127.0.0.1:5000/" method="POST">
+  <h1>Enter the OTP</h1>
+  <div class="nice-input">
+    <input name="key" type="text" id="test" v-model="message" />
+    <label for="test">
+      <span class="nice-input__animate" v-for="m in message2">{{m}}</span>
+    </label>
+    </div>
+ 
+  </main>
+   <input class="ui violet button" type="submit">
+   </form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+
+  
+    <script  src="js/verify_OTP_index.js"></script>
+
+
+</body>
+
+</html>
